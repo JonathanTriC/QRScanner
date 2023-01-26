@@ -7,18 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		BBFC599C297F983700CFDF85 /* BarcodeScannerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBFC599B297F983700CFDF85 /* BarcodeScannerApp.swift */; };
+		BBFC599C297F983700CFDF85 /* QRScannerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBFC599B297F983700CFDF85 /* QRScannerApp.swift */; };
 		BBFC599E297F983700CFDF85 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBFC599D297F983700CFDF85 /* ContentView.swift */; };
 		BBFC59A0297F983B00CFDF85 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BBFC599F297F983B00CFDF85 /* Assets.xcassets */; };
 		BBFC59A3297F983B00CFDF85 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BBFC59A2297F983B00CFDF85 /* Preview Assets.xcassets */; };
+		BBFC59AB297F99B000CFDF85 /* CarBode in Frameworks */ = {isa = PBXBuildFile; productRef = BBFC59AA297F99B000CFDF85 /* CarBode */; };
+		BBFC59B0297FB2FF00CFDF85 /* AlertToast in Frameworks */ = {isa = PBXBuildFile; productRef = BBFC59AF297FB2FF00CFDF85 /* AlertToast */; };
+		BBFC59B2297FB7E800CFDF85 /* QRScanView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBFC59B1297FB7E800CFDF85 /* QRScanView.swift */; };
+		BBFC59B5297FBDC000CFDF85 /* GenerateQRView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBFC59B4297FBDC000CFDF85 /* GenerateQRView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		BBFC5998297F983700CFDF85 /* BarcodeScanner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BarcodeScanner.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		BBFC599B297F983700CFDF85 /* BarcodeScannerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarcodeScannerApp.swift; sourceTree = "<group>"; };
+		BBFC5998297F983700CFDF85 /* QRScanner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QRScanner.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BBFC599B297F983700CFDF85 /* QRScannerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRScannerApp.swift; sourceTree = "<group>"; };
 		BBFC599D297F983700CFDF85 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		BBFC599F297F983B00CFDF85 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BBFC59A2297F983B00CFDF85 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		BBFC59B1297FB7E800CFDF85 /* QRScanView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRScanView.swift; sourceTree = "<group>"; };
+		BBFC59B3297FBA0D00CFDF85 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		BBFC59B4297FBDC000CFDF85 /* GenerateQRView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenerateQRView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +33,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BBFC59AB297F99B000CFDF85 /* CarBode in Frameworks */,
+				BBFC59B0297FB2FF00CFDF85 /* AlertToast in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -35,7 +44,7 @@
 		BBFC598F297F983700CFDF85 = {
 			isa = PBXGroup;
 			children = (
-				BBFC599A297F983700CFDF85 /* BarcodeScanner */,
+				BBFC599A297F983700CFDF85 /* QRScanner */,
 				BBFC5999297F983700CFDF85 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -43,20 +52,23 @@
 		BBFC5999297F983700CFDF85 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				BBFC5998297F983700CFDF85 /* BarcodeScanner.app */,
+				BBFC5998297F983700CFDF85 /* QRScanner.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		BBFC599A297F983700CFDF85 /* BarcodeScanner */ = {
+		BBFC599A297F983700CFDF85 /* QRScanner */ = {
 			isa = PBXGroup;
 			children = (
-				BBFC599B297F983700CFDF85 /* BarcodeScannerApp.swift */,
+				BBFC59B3297FBA0D00CFDF85 /* Info.plist */,
+				BBFC599B297F983700CFDF85 /* QRScannerApp.swift */,
 				BBFC599D297F983700CFDF85 /* ContentView.swift */,
 				BBFC599F297F983B00CFDF85 /* Assets.xcassets */,
 				BBFC59A1297F983B00CFDF85 /* Preview Content */,
+				BBFC59B1297FB7E800CFDF85 /* QRScanView.swift */,
+				BBFC59B4297FBDC000CFDF85 /* GenerateQRView.swift */,
 			);
-			path = BarcodeScanner;
+			path = QRScanner;
 			sourceTree = "<group>";
 		};
 		BBFC59A1297F983B00CFDF85 /* Preview Content */ = {
@@ -70,9 +82,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		BBFC5997297F983700CFDF85 /* BarcodeScanner */ = {
+		BBFC5997297F983700CFDF85 /* QRScanner */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = BBFC59A6297F983B00CFDF85 /* Build configuration list for PBXNativeTarget "BarcodeScanner" */;
+			buildConfigurationList = BBFC59A6297F983B00CFDF85 /* Build configuration list for PBXNativeTarget "QRScanner" */;
 			buildPhases = (
 				BBFC5994297F983700CFDF85 /* Sources */,
 				BBFC5995297F983700CFDF85 /* Frameworks */,
@@ -82,9 +94,13 @@
 			);
 			dependencies = (
 			);
-			name = BarcodeScanner;
+			name = QRScanner;
+			packageProductDependencies = (
+				BBFC59AA297F99B000CFDF85 /* CarBode */,
+				BBFC59AF297FB2FF00CFDF85 /* AlertToast */,
+			);
 			productName = BarcodeScanner;
-			productReference = BBFC5998297F983700CFDF85 /* BarcodeScanner.app */;
+			productReference = BBFC5998297F983700CFDF85 /* QRScanner.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -102,7 +118,7 @@
 					};
 				};
 			};
-			buildConfigurationList = BBFC5993297F983700CFDF85 /* Build configuration list for PBXProject "BarcodeScanner" */;
+			buildConfigurationList = BBFC5993297F983700CFDF85 /* Build configuration list for PBXProject "QRScanner" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -111,11 +127,15 @@
 				Base,
 			);
 			mainGroup = BBFC598F297F983700CFDF85;
+			packageReferences = (
+				BBFC59A9297F99B000CFDF85 /* XCRemoteSwiftPackageReference "CarBode-Barcode-Scanner-For-SwiftUI" */,
+				BBFC59AE297FB2FF00CFDF85 /* XCRemoteSwiftPackageReference "AlertToast" */,
+			);
 			productRefGroup = BBFC5999297F983700CFDF85 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				BBFC5997297F983700CFDF85 /* BarcodeScanner */,
+				BBFC5997297F983700CFDF85 /* QRScanner */,
 			);
 		};
 /* End PBXProject section */
@@ -138,7 +158,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				BBFC599E297F983700CFDF85 /* ContentView.swift in Sources */,
-				BBFC599C297F983700CFDF85 /* BarcodeScannerApp.swift in Sources */,
+				BBFC59B2297FB7E800CFDF85 /* QRScanView.swift in Sources */,
+				BBFC59B5297FBDC000CFDF85 /* GenerateQRView.swift in Sources */,
+				BBFC599C297F983700CFDF85 /* QRScannerApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -266,25 +288,33 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"BarcodeScanner/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"QRScanner/Preview Content\"";
 				DEVELOPMENT_TEAM = 6JAJU283LV;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = QRScanner/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "";
+				INFOPLIST_KEY_NSCameraUsageDescription = "This app needs access to your camera in order to scan barcodes.";
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "This app needs access to your galery in order to save qr codes.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.jonathantri.BarcodeScanner;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.jonathantri.QRScanner;
+				PRODUCT_NAME = QRScanner;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -295,32 +325,40 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"BarcodeScanner/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"QRScanner/Preview Content\"";
 				DEVELOPMENT_TEAM = 6JAJU283LV;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = QRScanner/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "";
+				INFOPLIST_KEY_NSCameraUsageDescription = "This app needs access to your camera in order to scan barcodes.";
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "This app needs access to your galery in order to save qr codes.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.jonathantri.BarcodeScanner;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.jonathantri.QRScanner;
+				PRODUCT_NAME = QRScanner;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		BBFC5993297F983700CFDF85 /* Build configuration list for PBXProject "BarcodeScanner" */ = {
+		BBFC5993297F983700CFDF85 /* Build configuration list for PBXProject "QRScanner" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				BBFC59A4297F983B00CFDF85 /* Debug */,
@@ -329,7 +367,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		BBFC59A6297F983B00CFDF85 /* Build configuration list for PBXNativeTarget "BarcodeScanner" */ = {
+		BBFC59A6297F983B00CFDF85 /* Build configuration list for PBXNativeTarget "QRScanner" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				BBFC59A7297F983B00CFDF85 /* Debug */,
@@ -339,6 +377,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		BBFC59A9297F99B000CFDF85 /* XCRemoteSwiftPackageReference "CarBode-Barcode-Scanner-For-SwiftUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/heart/CarBode-Barcode-Scanner-For-SwiftUI";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
+		BBFC59AE297FB2FF00CFDF85 /* XCRemoteSwiftPackageReference "AlertToast" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/elai950/AlertToast.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		BBFC59AA297F99B000CFDF85 /* CarBode */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BBFC59A9297F99B000CFDF85 /* XCRemoteSwiftPackageReference "CarBode-Barcode-Scanner-For-SwiftUI" */;
+			productName = CarBode;
+		};
+		BBFC59AF297FB2FF00CFDF85 /* AlertToast */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BBFC59AE297FB2FF00CFDF85 /* XCRemoteSwiftPackageReference "AlertToast" */;
+			productName = AlertToast;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = BBFC5990297F983700CFDF85 /* Project object */;
 }

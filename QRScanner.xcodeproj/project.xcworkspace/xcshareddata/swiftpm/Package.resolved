@@ -1,0 +1,23 @@
+{
+  "pins" : [
+    {
+      "identity" : "alerttoast",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/elai950/AlertToast.git",
+      "state" : {
+        "revision" : "a4f4267f6454259ba4ed8f9dadb87334a789c26c",
+        "version" : "1.3.7"
+      }
+    },
+    {
+      "identity" : "carbode-barcode-scanner-for-swiftui",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/heart/CarBode-Barcode-Scanner-For-SwiftUI",
+      "state" : {
+        "revision" : "6167624ec47174900434f1c03dfa0b2dd5d19c0d",
+        "version" : "2.2.3"
+      }
+    }
+  ],
+  "version" : 2
+}
